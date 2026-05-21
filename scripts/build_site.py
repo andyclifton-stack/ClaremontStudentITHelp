@@ -541,11 +541,20 @@ def page_shell(title, description, body, output_path, current=""):
 <body data-root="{prefix}">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span></span>
-      <span class="sr-only">Menu</span>
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">{nav_html(prefix, current)}</nav>
+    <div class="container header-inner">
+      <a class="brand" href="{prefix}index.html">
+        <img src="{prefix}assets/img/claremont-logo-white.png" alt="Claremont School">
+        <span class="brand-text">
+          <span class="student-label">For students</span>
+          <strong>{SITE_TITLE}</strong>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">{nav_html(prefix, current)}</nav>
+    </div>
   </header>
   <main id="main">
 {body}
@@ -594,30 +603,55 @@ def home_page():
     <section class="home-hero">
       <div class="container home-hero-inner">
         <div class="home-intro">
-          <img class="hero-logo" src="assets/img/claremont-logo-white.png" alt="Claremont School">
-          <h1>{SITE_TITLE}</h1>
-          <p>Practical help for school laptops, ClassLink, OneDrive, apps, safety and common fixes.</p>
+          <div class="identity-row">
+            <span class="identity-mark">S</span>
+            <span>Student support site</span>
+          </div>
+          <h1>Student Laptop &amp; Tech Help</h1>
+          <p>Find practical help for school laptops, passwords, ClassLink, OneDrive, apps, safety and common fixes.</p>
         </div>
         <div class="search-panel" role="search">
-          <label for="site-search">Search student IT help</label>
-          <input id="site-search" type="search" placeholder="Try password, WiFi, OneDrive, sound or ClassLink">
+          <label for="site-search">What do you need help with?</label>
+          <div class="search-row">
+            <input id="site-search" type="search" placeholder="Try password, WiFi, OneDrive, sound or ClassLink">
+            <button class="button" type="button">Search</button>
+          </div>
           <div id="search-results" class="search-results" aria-live="polite"></div>
+          <div class="search-suggestions" aria-label="Suggested searches">
+            <a href="{article_url(by_title['What to do if you forgot your password'])}">Forgot password</a>
+            <a href="{article_url(by_title['How to connect to school WiFi'])}">School WiFi</a>
+            <a href="{article_url(by_title['Where should I save my work?'])}">OneDrive files</a>
+            <a href="{article_url(by_title['How to open ClassLink'])}">ClassLink apps</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="support-strip">
       <div class="container">
         <div class="support-message">
-          <strong>Stuck?</strong>
-          <span>Try the matching guide first. If you still need help, speak to your form tutor.</span>
-          <a class="button" href="{article_url(by_title['How to submit an IT help request'])}">How to ask for help</a>
+          <div class="support-title">
+            <strong>Student help route</strong>
+            <span>Clearer than a staff ticket portal.</span>
+          </div>
+          <div class="support-step">
+            <span class="step-number">1</span>
+            <div><strong>Try the matching guide</strong><span>Use the search or category links first.</span></div>
+          </div>
+          <div class="support-step">
+            <span class="step-number">2</span>
+            <div><strong>Ask your form tutor</strong><span>Share what you tried and any error message.</span></div>
+          </div>
+          <div class="support-step">
+            <span class="step-number">3</span>
+            <div><strong>IT request if needed</strong><span>Your tutor can help route the issue.</span></div>
+          </div>
         </div>
       </div>
     </section>
     <section class="section home-section">
       <div class="container">
         <div class="section-heading">
-          <h2>Common Tasks</h2>
+          <h2>What do you need to do?</h2>
           <p>{len(ARTICLES)} student guides across {len(CATEGORIES)} help areas.</p>
         </div>
         <div class="quick-link-grid">{''.join(common_cards)}</div>
@@ -626,21 +660,24 @@ def home_page():
     <section class="section soft home-section">
       <div class="container">
         <div class="section-heading">
-          <h2>Browse by Category</h2>
+          <h2>Find a guide</h2>
           <p>Choose the area that matches what you are trying to do.</p>
         </div>
         <div class="category-grid">{''.join(category_cards)}</div>
       </div>
     </section>
-    <section class="section home-section">
-      <div class="container two-col">
+    <section class="section home-section student-band">
+      <div class="container student-band-inner">
         <div>
-          <h2>Designed for students</h2>
-          <p>This site is separate from staff IT support. It focuses on what students need day to day: signing in, saving work, keeping devices charged, using school apps and fixing common laptop issues.</p>
+          <h2>Clearly separate from staff support</h2>
+          <p>This keeps the Claremont brand, but makes the site feel like a student help hub: search-led, lighter, teal-accented, and organised around the way students actually ask for help.</p>
         </div>
-        <aside class="callout blue">
-          <p><strong>Managed laptop note:</strong> some settings and app installs are restricted because school laptops are managed for learning, security and safeguarding.</p>
-        </aside>
+        <ul class="difference-list">
+          <li>Visible "For students" identity</li>
+          <li>Different teal and sky accent palette</li>
+          <li>Search-first homepage layout</li>
+          <li>Student help route made prominent</li>
+        </ul>
       </div>
     </section>"""
     return page_shell("Home", "Student-facing IT help for Claremont School.", body, "index.html", "home")
