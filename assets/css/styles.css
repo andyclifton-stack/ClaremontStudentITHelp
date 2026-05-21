@@ -24,11 +24,18 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   color: var(--ink);
   background: var(--paper);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 img {
@@ -736,10 +743,11 @@ li {
 }
 
 .site-footer {
-  padding: 1.15rem 0;
+  flex: 0 0 auto;
+  padding: 0.75rem 0;
   background: #fff;
   color: var(--muted);
-  border-top: 1px solid var(--line);
+  border-top: 1px solid #c9d6e2;
 }
 
 .footer-inner {
@@ -821,7 +829,7 @@ li {
 
 @media (max-width: 780px) {
   .section-heading,
-  .footer-inner {
+  .student-band-inner {
     align-items: start;
     flex-direction: column;
   }

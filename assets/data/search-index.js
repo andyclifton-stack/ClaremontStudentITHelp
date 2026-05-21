@@ -39,7 +39,7 @@ window.STUDENT_HELP_SEARCH_INDEX = [
     "category": "Laptop Basics",
     "url": "articles/how-to-connect-to-school-wifi/index.html",
     "summary": "How school WiFi should work on a managed laptop and what to do if it does not connect.",
-    "text": "Your managed school laptop should connect to CLM-Secure automatically when you are on site. You should not need to enter a WiFi password. If WiFi is not connected Select the network icon near the clock. Check that WiFi is turned on. Look for CLM-Secure and try connecting to it. If CLM-Secure will not connect, use CLM Guest . It has no password. Restart the laptop if neither network connects. At home The laptop can connect to home WiFi in the usual way. School management applies to the laptop, not to your home router or other home devices. Still stuck? Tell your form tutor whether the problem is with CLM-Secure, CLM Guest, home WiFi, or all networks."
+    "text": "Your managed school laptop should connect to CLM-Secure automatically when you are on site. You should not need to enter a WiFi password. If WiFi is not connected Select the network icon near the clock. Check that WiFi is turned on. Look for CLM-Secure and try connecting to it. If CLM-Secure will not connect, use CLM-Guest . It has no password. Restart the laptop if neither network connects. At home The laptop can connect to home WiFi in the usual way. School management applies to the laptop, not to your home router or other home devices. Still stuck? Tell your form tutor whether the problem is with CLM-Secure, CLM-Guest, home WiFi, or all networks."
   },
   {
     "title": "How to find your school apps",
@@ -52,8 +52,8 @@ window.STUDENT_HELP_SEARCH_INDEX = [
     "title": "How to use OneDrive on your laptop",
     "category": "Files & OneDrive",
     "url": "articles/how-to-use-onedrive-on-your-laptop/index.html",
-    "summary": "How OneDrive helps keep school work backed up and available across devices.",
-    "text": "OneDrive is Microsoft cloud storage. It helps keep your school files backed up and available when you sign in on another school device. Check OneDrive is working Look for the cloud icon near the clock. A blue cloud usually means OneDrive is signed in. If you see a grey cloud, open it and sign in with your school account. Save school documents in your OneDrive folders. Useful folders Use clear folders for subjects, homework and projects. A tidy file system is boring until the exact moment it saves your work."
+    "summary": "How OneDrive keeps school files backed up and available across school devices.",
+    "text": "OneDrive is Microsoft cloud storage. On school devices, your school account is used for Windows, Microsoft 365 and OneDrive. When OneDrive is running and signed in, your school files are backed up automatically and available when you sign in on another school device. Backed up automatically: files saved in your school OneDrive, including synced Desktop and Documents folders where these are enabled, should copy to the cloud as long as OneDrive is running and signed in. Check OneDrive is working Look for the cloud icon near the clock. A blue cloud usually means OneDrive is signed in. If you see a grey cloud, open it and sign in with your school account. Save school documents in your OneDrive, Desktop or Documents folders rather than only in Downloads. Useful folders Use clear folders for subjects, homework and projects. A tidy file system is boring until the exact moment it saves your work."
   },
   {
     "title": "Where should I save my work?",
@@ -70,11 +70,11 @@ window.STUDENT_HELP_SEARCH_INDEX = [
     "text": "If a file was saved in OneDrive or Google Drive, there is often a way to recover it. OneDrive Open OneDrive in your browser or File Explorer. Check the Recycle Bin if the file was deleted. For a changed file, open version history if available. Google Drive Open Google Drive. Check Trash for deleted files. For Google Docs, Sheets or Slides, use version history to look for an earlier version. If you cannot find it, speak to your form tutor as soon as possible. File recovery is usually easier if you ask quickly."
   },
   {
-    "title": "How to submit an IT help request",
+    "title": "How to ask for IT help",
     "category": "Start Here",
-    "url": "articles/how-to-submit-an-it-help-request/index.html",
-    "summary": "What students should do before asking for IT help, and what information to include.",
-    "text": "If something is not working, start with the guide that matches the problem. If you are still stuck, speak to your form tutor. Before asking for help Restart the laptop if it is safe to do so. Check the relevant guide on this site. Write down the exact error message if one appears. Tell your form tutor What you were trying to do. What happened instead. When the problem started. Whether it happens at school, at home or both. Your laptop name or asset label if there is one. Important: students should speak to their form tutor first rather than going directly to staff support systems."
+    "url": "articles/how-to-ask-for-it-help/index.html",
+    "summary": "What students should do before asking for help, and what information to give their form tutor.",
+    "text": "If something is not working, start with the guide that matches the problem. If you are still stuck, speak to your form tutor. Before asking for help Restart the laptop if it is safe to do so. Check the relevant guide on this site. Write down the exact error message if one appears. Tell your form tutor What you were trying to do. What happened instead. When the problem started. Whether it happens at school, at home or both. Your laptop name or asset label if there is one. Important: students should speak to their form tutor first. Your form tutor can help decide whether IT support needs to be contacted."
   },
   {
     "title": "Laptop not charging or not turning on",
@@ -116,7 +116,7 @@ window.STUDENT_HELP_SEARCH_INDEX = [
     "category": "Safety & Security",
     "url": "articles/keeping-your-laptop-safe-and-charged/index.html",
     "summary": "Everyday habits for looking after your laptop, charger and stylus.",
-    "text": "Your laptop is part of your school equipment. Look after it like you would a calculator, sports kit or exam materials. Daily habits Charge it overnight and bring it to school ready to use. Keep liquids away from the keyboard and charger. Use a protective case or laptop section in your bag. Do not leave it unattended in public areas. Keep your stylus with the laptop so it is available for lessons. What not to do Do not lend your laptop to another student. Do not use stickers that make it hard to identify. Do not wrap the charger cable tightly around the power brick."
+    "text": "Your laptop is part of your school equipment. Look after it like you would a textbook, calculator or sports kit. Daily habits Charge it overnight and bring it to school ready to use. Keep liquids away from the keyboard and charger. Use a protective case or laptop section in your bag. Do not leave it unattended in public areas. Keep your stylus with the laptop so it is available for lessons. What not to do Do not lend your laptop to another student. Do not use stickers that make it hard to identify. Do not wrap the charger cable tightly around the power brick."
   },
   {
     "title": "What to do if your laptop is lost or damaged",
@@ -145,12 +145,5 @@ window.STUDENT_HELP_SEARCH_INDEX = [
     "url": "articles/using-accessibility-tools/index.html",
     "summary": "Windows tools for text to speech, dictation, zoom and colour filters.",
     "text": "Windows includes tools that can make reading, writing and screen use easier. These are useful for lots of students, not only students with a formal access arrangement. Useful shortcuts Text size and zoom: use Settings, Accessibility, Text size or press Ctrl + plus in many apps. Magnifier: press Windows + Plus to zoom in, Windows + Esc to close Magnifier. Dictation: press Windows + H in a text box. Narrator: press Ctrl + Windows + Enter to turn Narrator on or off. Colour filters: open Settings, Accessibility, Colour filters. Ask if you need a setting changed Some accessibility settings may be restricted on a managed laptop. If a setting would help you learn, speak to your form tutor or learning support staff."
-  },
-  {
-    "title": "Exams: using your laptop safely and correctly",
-    "category": "Exams",
-    "url": "articles/exams-using-your-laptop-safely-and-correctly/index.html",
-    "summary": "General exam-period guidance for using a managed laptop responsibly.",
-    "text": "Follow the instructions given by your teachers and exam staff. Exam rules always come before general laptop guidance. Before an exam period Make sure your laptop charges properly. Restart it regularly so updates do not pile up. Tell your form tutor early if the keyboard, screen, charger or battery is unreliable. Bring your charger if you are told to. During exams or controlled work Only open the software or files you are told to use. Do not use messaging, email or websites unless allowed. Do not try to change settings or work around restrictions. If in doubt: ask the supervising member of staff before doing anything on the laptop."
   }
 ];

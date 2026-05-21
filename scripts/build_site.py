@@ -19,7 +19,6 @@ CATEGORIES = [
     ("troubleshooting", "Troubleshooting", "Quick fixes for sound, power, display and connection problems."),
     ("safety-security", "Safety & Security", "Phishing, passwords and keeping your laptop safe."),
     ("accessibility", "Accessibility", "Tools that make reading, writing and screen use easier."),
-    ("exams", "Exams", "Using your laptop safely and sensibly around exam periods."),
 ]
 
 
@@ -149,12 +148,12 @@ ARTICLES = [
           <li>Select the network icon near the clock.</li>
           <li>Check that WiFi is turned on.</li>
           <li>Look for <strong>CLM-Secure</strong> and try connecting to it.</li>
-          <li>If CLM-Secure will not connect, use <strong>CLM Guest</strong>. It has no password.</li>
+          <li>If CLM-Secure will not connect, use <strong>CLM-Guest</strong>. It has no password.</li>
           <li>Restart the laptop if neither network connects.</li>
         </ol>
         <h2>At home</h2>
         <p>The laptop can connect to home WiFi in the usual way. School management applies to the laptop, not to your home router or other home devices.</p>
-        <div class="callout blue"><p><strong>Still stuck?</strong> Tell your form tutor whether the problem is with CLM-Secure, CLM Guest, home WiFi, or all networks.</p></div>
+        <div class="callout blue"><p><strong>Still stuck?</strong> Tell your form tutor whether the problem is with CLM-Secure, CLM-Guest, home WiFi, or all networks.</p></div>
         """,
     ),
     article(
@@ -177,15 +176,16 @@ ARTICLES = [
     article(
         "How to use OneDrive on your laptop",
         "Files & OneDrive",
-        "How OneDrive helps keep school work backed up and available across devices.",
+        "How OneDrive keeps school files backed up and available across school devices.",
         """
-        <p>OneDrive is Microsoft cloud storage. It helps keep your school files backed up and available when you sign in on another school device.</p>
+        <p>OneDrive is Microsoft cloud storage. On school devices, your school account is used for Windows, Microsoft 365 and OneDrive. When OneDrive is running and signed in, your school files are backed up automatically and available when you sign in on another school device.</p>
+        <div class="callout blue"><p><strong>Backed up automatically:</strong> files saved in your school OneDrive, including synced Desktop and Documents folders where these are enabled, should copy to the cloud as long as OneDrive is running and signed in.</p></div>
         <h2>Check OneDrive is working</h2>
         <ol>
           <li>Look for the cloud icon near the clock.</li>
           <li>A blue cloud usually means OneDrive is signed in.</li>
           <li>If you see a grey cloud, open it and sign in with your school account.</li>
-          <li>Save school documents in your OneDrive folders.</li>
+          <li>Save school documents in your OneDrive, Desktop or Documents folders rather than only in Downloads.</li>
         </ol>
         <h2>Useful folders</h2>
         <p>Use clear folders for subjects, homework and projects. A tidy file system is boring until the exact moment it saves your work.</p>
@@ -233,9 +233,9 @@ ARTICLES = [
         """,
     ),
     article(
-        "How to submit an IT help request",
+        "How to ask for IT help",
         "Start Here",
-        "What students should do before asking for IT help, and what information to include.",
+        "What students should do before asking for help, and what information to give their form tutor.",
         """
         <p>If something is not working, start with the guide that matches the problem. If you are still stuck, speak to your form tutor.</p>
         <h2>Before asking for help</h2>
@@ -252,7 +252,7 @@ ARTICLES = [
           <li>Whether it happens at school, at home or both.</li>
           <li>Your laptop name or asset label if there is one.</li>
         </ul>
-        <div class="callout"><p><strong>Important:</strong> students should speak to their form tutor first rather than going directly to staff support systems.</p></div>
+        <div class="callout"><p><strong>Important:</strong> students should speak to their form tutor first. Your form tutor can help decide whether IT support needs to be contacted.</p></div>
         """,
     ),
     article(
@@ -363,7 +363,7 @@ ARTICLES = [
         "Safety & Security",
         "Everyday habits for looking after your laptop, charger and stylus.",
         """
-        <p>Your laptop is part of your school equipment. Look after it like you would a calculator, sports kit or exam materials.</p>
+        <p>Your laptop is part of your school equipment. Look after it like you would a textbook, calculator or sports kit.</p>
         <h2>Daily habits</h2>
         <ul>
           <li>Charge it overnight and bring it to school ready to use.</li>
@@ -455,32 +455,10 @@ ARTICLES = [
         <p>Some accessibility settings may be restricted on a managed laptop. If a setting would help you learn, speak to your form tutor or learning support staff.</p>
         """,
     ),
-    article(
-        "Exams: using your laptop safely and correctly",
-        "Exams",
-        "General exam-period guidance for using a managed laptop responsibly.",
-        """
-        <p>Follow the instructions given by your teachers and exam staff. Exam rules always come before general laptop guidance.</p>
-        <h2>Before an exam period</h2>
-        <ul>
-          <li>Make sure your laptop charges properly.</li>
-          <li>Restart it regularly so updates do not pile up.</li>
-          <li>Tell your form tutor early if the keyboard, screen, charger or battery is unreliable.</li>
-          <li>Bring your charger if you are told to.</li>
-        </ul>
-        <h2>During exams or controlled work</h2>
-        <ul>
-          <li>Only open the software or files you are told to use.</li>
-          <li>Do not use messaging, email or websites unless allowed.</li>
-          <li>Do not try to change settings or work around restrictions.</li>
-        </ul>
-        <div class="callout"><p><strong>If in doubt:</strong> ask the supervising member of staff before doing anything on the laptop.</p></div>
-        """,
-    ),
 ]
 
 COMMON_TASKS = [
-    "How to submit an IT help request",
+    "How to ask for IT help",
     "Signing in for the first time",
     "What to do if you forgot your password",
     "How to open ClassLink",
@@ -562,10 +540,8 @@ def page_shell(title, description, body, output_path, current=""):
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="{prefix}assets/img/claremont-logo.png" alt="Claremont School">
         <span>{SITE_TITLE}</span>
       </div>
-      <p>Student-facing help for school laptops, accounts, apps and safe digital learning.</p>
       <p><strong>Need help?</strong> Speak to your form tutor first.</p>
     </div>
   </footer>
@@ -643,7 +619,7 @@ def home_page():
           </div>
           <div class="support-step">
             <span class="step-number">3</span>
-            <div><strong>IT request if needed</strong><span>Your tutor can help route the issue.</span></div>
+            <div><strong>IT can be contacted if needed</strong><span>Your tutor can help route the issue.</span></div>
           </div>
         </div>
       </div>
@@ -669,14 +645,14 @@ def home_page():
     <section class="section home-section student-band">
       <div class="container student-band-inner">
         <div>
-          <h2>Clearly separate from staff support</h2>
-          <p>This keeps the Claremont brand, but makes the site feel like a student help hub: search-led, lighter, teal-accented, and organised around the way students actually ask for help.</p>
+          <h2>Quick reminders</h2>
+          <p>A few habits prevent most laptop and account problems: keep your device charged, restart regularly, and save school work where it is backed up.</p>
         </div>
         <ul class="difference-list">
-          <li>Visible "For students" identity</li>
-          <li>Different teal and sky accent palette</li>
-          <li>Search-first homepage layout</li>
-          <li>Student help route made prominent</li>
+          <li>Charge your laptop before school</li>
+          <li>Restart when updates need to finish</li>
+          <li>Keep OneDrive signed in and running</li>
+          <li>Speak to your form tutor if you are stuck</li>
         </ul>
       </div>
     </section>"""
@@ -742,7 +718,7 @@ def article_page(item):
         <aside class="article-aside">
           <h2>Need more help?</h2>
           <p>If this guide does not solve it, speak to your form tutor and explain what happened.</p>
-          <a class="button" href="../../articles/how-to-submit-an-it-help-request/index.html">How to ask for help</a>
+          <a class="button" href="../../articles/how-to-ask-for-it-help/index.html">How to ask for help</a>
           {f'<h3>Related guides</h3><ul>{related_links}</ul>' if related_links else ''}
         </aside>
       </div>
