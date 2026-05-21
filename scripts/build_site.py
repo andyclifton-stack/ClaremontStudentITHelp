@@ -607,7 +607,6 @@ def home_page():
         <div class="support-message">
           <div class="support-title">
             <strong>Student help route</strong>
-            <span>Clearer than a staff ticket portal.</span>
           </div>
           <div class="support-step">
             <span class="step-number">1</span>
