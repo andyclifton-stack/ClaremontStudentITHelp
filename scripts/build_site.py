@@ -547,6 +547,9 @@ def page_shell(title, description, body, output_path, current=""):
   </footer>
   <script src="{prefix}assets/data/search-index.js"></script>
   <script src="{prefix}assets/js/site.js"></script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "b44de9d9bae349c089d0490385fb937f"}}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
