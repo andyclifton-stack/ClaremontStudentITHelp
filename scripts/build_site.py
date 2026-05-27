@@ -54,7 +54,7 @@ ARTICLES = [
         </ul>
         <h2>What is different about a managed laptop?</h2>
         <p>The school can apply security, safeguarding, filtering and learning settings. This also means some settings are restricted and students do not have administrator access.</p>
-        <div class="callout blue"><p><strong>Good habit:</strong> if something odd happens, restart first, then check the relevant guide. A restart fixes more problems than it has any right to.</p></div>
+        <div class="callout blue"><p><strong>Good habit:</strong> if something odd happens, restart first, then check the relevant guide. A quick restart can solve many common laptop problems.</p></div>
         """,
     ),
     article(
@@ -188,7 +188,7 @@ ARTICLES = [
           <li>Save school documents in your OneDrive, Desktop or Documents folders rather than only in Downloads.</li>
         </ol>
         <h2>Useful folders</h2>
-        <p>Use clear folders for subjects, homework and projects. A tidy file system is boring until the exact moment it saves your work.</p>
+        <p>Use clear folders for subjects, homework and projects. Keeping your folders organised makes important work much easier to find.</p>
         """,
     ),
     article(
